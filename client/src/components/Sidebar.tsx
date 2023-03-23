@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../styles/Sidebar.css'
 import {cities, Icity} from "../utils/Cities"
 
