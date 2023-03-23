@@ -2,9 +2,14 @@ import React from 'react'
 import '../styles/Sidebar.css'
 import {cities, Icity} from "../utils/Cities"
 
-const Sidebar = () => {
+// creating interface for our sidebar props
+interface Iprops{
+  open: boolean
+}
+const Sidebar = ({open}:Iprops) => {
   return (
-    <div className='sidebar-con'>
+   
+    <div className={open? "sidebar-close": "sidebar-con"}>
       {
         cities.map((city:Icity)=>(
           <div key={city.id} className="city-div">
@@ -13,6 +18,7 @@ const Sidebar = () => {
         ))
       }
     </div>
+   
   )
 }
 

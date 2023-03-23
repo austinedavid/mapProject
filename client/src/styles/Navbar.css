@@ -17,3 +17,14 @@
     color: red;
     font-weight: bold;
 }
+.menu-div{
+    display: none;
+}
+
+
+/* mobile media queries */
+@media(max-width:450px){
+    .menu-div{
+        display: block;
+    }
+}

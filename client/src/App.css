@@ -14,3 +14,11 @@
   display: grid;
   grid-template-columns: 20% 80%;
 }
+
+/* handle media queries for mobile view */
+@media(max-width:450px){
+ .down-container{
+  grid-template-columns: 1fr;
+  position: relative;
+ }
+}

@@ -10,12 +10,21 @@ interface Iprops{
 }
 const Navbar = ({open, setopen}:Iprops) => {
   
+  // here we set open and set it to true
+  const handleOpen = ()=>{
+    setopen(false)
+  }
+  // here we handle open and set it to false
+  const handleClose = ()=>{
+    setopen(true)
+  }
   return (
     <div className='nav-container'>
       <div className='logo-div'><h4>MapBox</h4></div>
       <div className='menu-div'>
-        {open?<CloseIcon sx={{color:"white", fontSize:30, cursor: "pointer"}}/>:
-        <MenuIcon sx={{color:"white", fontSize:30, cursor: "pointer"}}/>}
+        {open? <div onClick={handleOpen}><MenuIcon sx={{color:"white", fontSize:30, cursor: "pointer"}}/></div>:
+          <div onClick={handleClose}><CloseIcon sx={{color:"white", fontSize:30, cursor: "pointer"}}/></div>
+        }
       </div>
     </div>
   )
