@@ -1,0 +1,18 @@
+.sidebar-con{
+    background-color: rgb(19, 19, 19);
+    padding: 30px 10px;
+    overflow-y: scroll;
+}
+.city-div{
+    background-color:rgb(43, 43, 43) ;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.city-div:hover{
+    background-color: rgb(69, 68, 68);
+}
+.city-div p{
+    color: white;
+}
